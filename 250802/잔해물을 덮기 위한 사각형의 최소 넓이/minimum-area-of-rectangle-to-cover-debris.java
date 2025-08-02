@@ -37,15 +37,17 @@ public class Main {
         for (int i = 0; i < 2000; i++) {
             for (int j = 0 ; j < 2000; j++){
                 if (checked[i][j] == 1) {
-                    if (min_x > i || min_y > j) {
+                    if (min_x > i)
                         min_x = i;
-                        min_y = j;
-                    }
 
-                    if (max_x < i || max_y < j) {
+                    if (min_y > j)
+                        min_y = j;
+
+                    if (max_x < i+1)
                         max_x = i+1;
+                    
+                    if (max_y < j+1)
                         max_y = j+1;
-                    }
                 }
             }
         }
