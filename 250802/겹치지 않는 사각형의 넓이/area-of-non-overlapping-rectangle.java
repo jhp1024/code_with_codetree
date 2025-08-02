@@ -5,18 +5,18 @@ public class Main {
     public static void main(String[] args) {
         int result = 0;
         Scanner sc = new Scanner(System.in);
-        int ax1 = sc.nextInt();
-        int ay1 = sc.nextInt();
-        int ax2 = sc.nextInt();
-        int ay2 = sc.nextInt();
-        int bx1 = sc.nextInt();
-        int by1 = sc.nextInt();
-        int bx2 = sc.nextInt();
-        int by2 = sc.nextInt();
-        int mx1 = sc.nextInt();
-        int my1 = sc.nextInt();
-        int mx2 = sc.nextInt();
-        int my2 = sc.nextInt();
+        int ax1 = offset + sc.nextInt();
+        int ay1 = offset + sc.nextInt();
+        int ax2 = offset + sc.nextInt();
+        int ay2 = offset + sc.nextInt();
+        int bx1 = offset + sc.nextInt();
+        int by1 = offset + sc.nextInt();
+        int bx2 = offset + sc.nextInt();
+        int by2 = offset + sc.nextInt();
+        int mx1 = offset + sc.nextInt();
+        int my1 = offset + sc.nextInt();
+        int mx2 = offset + sc.nextInt();
+        int my2 = offset + sc.nextInt();
         // Please write your code here.
         for (int i = ax1; i < ax2; i++) {
             for (int j = ay1; j < ay2; j++) {
