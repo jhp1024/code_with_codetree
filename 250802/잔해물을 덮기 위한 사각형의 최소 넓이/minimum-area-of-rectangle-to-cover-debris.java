@@ -22,6 +22,7 @@ public class Main {
         int min_y = 2000;
         int max_x = 0;
         int max_y = 0;
+        boolean all_erase = true;
         Scanner sc = new Scanner(System.in);
         int rect1_x1 = offset + sc.nextInt();
         int rect1_y1 = offset + sc.nextInt();
@@ -37,6 +38,7 @@ public class Main {
         for (int i = 0; i < 2000; i++) {
             for (int j = 0 ; j < 2000; j++){
                 if (checked[i][j] == 1) {
+                    all_erase = false;
                     if (min_x > i)
                         min_x = i;
 
@@ -51,6 +53,9 @@ public class Main {
                 }
             }
         }
-        System.out.println((max_y-min_y)*(max_x-min_x));
+        if (all_erase == false)
+            System.out.println((max_y-min_y)*(max_x-min_x));
+        else
+            System.out.println(0);
     }
 }
