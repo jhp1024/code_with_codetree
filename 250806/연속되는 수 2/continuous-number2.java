@@ -11,16 +11,13 @@ public class Main {
             arr[i] = sc.nextInt();
         }
         // Please write your code here.
-
         for (int i = 0; i < n; i++) {
-            if (i == 0 || arr[i] == arr[i-1])
+            if (i >= 1 && arr[i] == arr[i-1])
                 cnt++;
-            
-            if (i != 0 && arr[i] != arr[i-1]) {
-                if (max_cnt < cnt)
-                    max_cnt = cnt;
+            else
                 cnt = 1;
-            }
+            
+            max_cnt = Math.max(max_cnt, cnt);
         }
         System.out.println(max_cnt);
     }
