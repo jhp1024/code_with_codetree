@@ -15,9 +15,9 @@ public class Main {
             if (i == 0 || (arr[i] > 0 && arr[i-1] > 0) || (arr[i] < 0 && arr[i-1] < 0)) {
                 cnt++;
             } else {
-                max_cnt = Math.max(max_cnt, cnt);
                 cnt = 1;
             }
+            max_cnt = Math.max(max_cnt, cnt);
         }
         
         System.out.println(max_cnt);
